@@ -1,8 +1,10 @@
-
-
 fetch('http://localhost:3000/mountains/')
-.then(response => response.json())
-.then(mountains => mountains.forEach(mountain => {
+    .then(response => response.json())
+    .then(mountains => createMountainCards(mountains))
+
+
+function createMountainCards(mountains) {
+    mountains.forEach(mountain => {
         console.log(mountain)
         let li = document.createElement('li')
         let ul = document.querySelector(".Mountains")
@@ -13,6 +15,14 @@ fetch('http://localhost:3000/mountains/')
             </div>
         `   
         ul.append(li)
-    }))
+    })
+}
 
-    
+const nameForm = document.querySelector('.form-box')
+const formData = new FormData(nameForm)
+
+nameForm.addEventListener('submit', event => {
+    event.preventDefault()
+    const name = formData.get('name')
+    console.log(name)
+})
