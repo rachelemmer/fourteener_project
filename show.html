@@ -9,14 +9,31 @@
 
 </head>
 <body>
+    <header>
+        <h1>A Guide to Colorado's Fourteeners</h1>
+    </header>
     <form>
-        <div class="form-box">
+        <div class="search-box">
             <input type="text" class="search-by-name" name="name" placeholder="Search Fourteeners by Name">
             <button class="search-btn" type="submit">Search</button>
         </div>
+        <div>
+            <img id="mountain-icon" src="https://cdn0.iconfinder.com/data/icons/business-linear-1/614/16_-_Mountain-512.png" alt="Mountain Icon">
+        </div>
+        <div class="difficulty-box">
+            <label>Search Fourteeners by Difficulty</label>
+            <select name="Difficulty"> 
+                <option value="1">Class 1</option>
+                <option value="2">Class 2</option>
+                <option value="3">Class 3</option>
+                <option value="4">Class 4</option>
+            </select>
+        </div>
     </form>
  
-    <ul class="Mountains"></ul>
+    <ul class="Mountains">
+
+    </ul>
     <script src="show.js"></script>
 </body>
 </html>
