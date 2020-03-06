@@ -2,6 +2,14 @@ body {
     background-color: #A9A9A9;
 }
 
+header h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    padding: .5rem;
+    color: #181818;
+}
+
 ul {
     display: flex;
     flex-wrap: wrap;
@@ -40,31 +48,59 @@ li > img {
     display: inline-block;
 }
 
-.form-box {
+form {
     height: 10vh;
     background-position: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-family: sans-serif;
+    margin: 2rem;
+}
+
+select {
+    border: transparent;
+    color: #696969;
 }
 
 .search-by-name {
    height: 30px;
-   width: 200px;
+   width: 300px;
    padding: 5px;
    border: none;
    border-radius: 20px; 
    outline: none;
-   text-align: center; 
+   text-align: center;
+   font-size: 14px;
+   font-family: 'Montserrat', sans-serif;
+
 }
 
 .search-btn {
-    height: 40px;
+    height: 30px;
     width: 80px;
     padding: 5px;
     border: none;
     border-radius: 20px; 
     outline: none;
     text-align: center; 
+    display: none;
 }
+
+.difficulty-box {
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    background-color: white;
+    border: none;
+    border-radius: 20px; 
+    font-family: 'Montserrat', sans-serif;
+    color: #696969;
+    font-size: 14px;
+
+}
+
+#mountain-icon {
+    width: 10rem;
+}
+
