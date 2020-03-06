@@ -19,12 +19,15 @@ function createMountainCards(mountains) {
         const li = document.createElement('li')
         
         li.innerHTML = `  
-            
+            <div class="front">
                 <img src="${mountain.image}" alt="${mountain.name}" style="width:100%">
-                <div class="container">
-                    <a class="card-title" href='mountain.html?id=${mountain.id}'>${mountain.name}</a>
-                </div>
+                <a class="card-title" href='mountain.html?id=${mountain.id}'>${mountain.name}</a>
+            </div>
+            <div class="back">
+                <p>back</p>
+            </div>
         `   
+
         ul.append(li)
     })
 }
