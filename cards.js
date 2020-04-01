@@ -8,7 +8,6 @@ fetch('http://localhost:3000/mountains/')
     .then(mountains => {
         createMountainCards(mountains)
         filteredMountains = mountains
-        console.log(filteredMountains)
     })
 
 
@@ -17,15 +16,33 @@ function createMountainCards(mountains) {
     ul.innerHTML = '';
     mountains.forEach(mountain => {
         const li = document.createElement('li')
-        
+        mountain.routes.forEach(route => {
+
         li.innerHTML = `  
-            
+            <div class="front">
                 <img src="${mountain.image}" alt="${mountain.name}" style="width:100%">
-                <div class="container">
-                    <a class="card-title" href='mountain.html?id=${mountain.id}'>${mountain.name}</a>
-                </div>
+                <h1 class="card-title">${mountain.name}</h1>
+            </div>
+            <div class="back">
+                <h1 class="back-card-mt">${mountain.name}</h1>
+                <h3 class="back-card-mt">Rank: ${mountain.rank ? mountain.rank : "Unranked"}</h3>
+                <h3 class="back-card-mt">Elevation: ${mountain.elevation.toLocaleString()} feet</h3>
+                <br>
+                <p class="back-card-route">Standard Route: ${route.name}</p>
+                <p class="back-card-route">Trailhead: ${route.trailhead}</p>
+                <p class="back-card-route">Difficulty: Class ${route.difficulty}</p>
+                <p class="back-card-route">Gain: ${route.gain.toLocaleString()} feet</p>
+                <p class="back-card-route">Length: ${route.length} miles</p>
+            </div>
         `   
         ul.append(li)
+        li.addEventListener('click', event => {
+            li.classList.toggle('is-flipped')
+        li.addEventListener('mouseover', event => {
+            
+        })
+        })  
+        })
     })
 }
 
