@@ -25,13 +25,14 @@ function createMountainCards(mountains) {
             </div>
             <div class="back">
                 <h1 class="back-card-mt">${mountain.name}</h1>
-                <h3 class="back-card-mt">Rank: #${mountain.rank}</h3>
-                <h3 class="back-card-mt">Elevation: ${mountain.elevation}</h3>
-                <p>Standard Route: ${route.name}</p>
-                <p>Trailhead: ${route.trailhead}</p>
-                <p>Difficulty: ${route.difficulty}</p>
-                <p>Gain: ${route.gain} feet</p>
-                <p>Length: ${route.length} miles</p>
+                <h3 class="back-card-mt">Rank: ${mountain.rank ? mountain.rank : "Unranked"}</h3>
+                <h3 class="back-card-mt">Elevation: ${mountain.elevation.toLocaleString()} feet</h3>
+                <br>
+                <p class="back-card-route">Standard Route: ${route.name}</p>
+                <p class="back-card-route">Trailhead: ${route.trailhead}</p>
+                <p class="back-card-route">Difficulty: Class ${route.difficulty}</p>
+                <p class="back-card-route">Gain: ${route.gain.toLocaleString()} feet</p>
+                <p class="back-card-route">Length: ${route.length} miles</p>
             </div>
         `   
         ul.append(li)

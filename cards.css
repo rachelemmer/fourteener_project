@@ -68,6 +68,10 @@ li.is-flipped {
     transform: rotateY( 180deg );
 }
 
+.back-card-route {
+    padding: 0 0 0 15px;
+}
+
 .back-card-mt {
     text-align: center;
 }
@@ -130,4 +134,9 @@ select {
 
 #mountain-icon {
     width: 10rem;
+}
+
+#copyright {
+    font-family: 'Montserrat', sans-serif;
+    color: #696969;
 }
