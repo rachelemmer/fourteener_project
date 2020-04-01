@@ -8,7 +8,6 @@ fetch('http://localhost:3000/mountains/')
     .then(mountains => {
         createMountainCards(mountains)
         filteredMountains = mountains
-        console.log(filteredMountains)
     })
 
 
@@ -17,18 +16,32 @@ function createMountainCards(mountains) {
     ul.innerHTML = '';
     mountains.forEach(mountain => {
         const li = document.createElement('li')
-        
+        mountain.routes.forEach(route => {
+
         li.innerHTML = `  
             <div class="front">
                 <img src="${mountain.image}" alt="${mountain.name}" style="width:100%">
-                <a class="card-title" href='mountain.html?id=${mountain.id}'>${mountain.name}</a>
+                <h1 class="card-title">${mountain.name}</h1>
             </div>
             <div class="back">
-                <p>back</p>
+                <h1 class="back-card-mt">${mountain.name}</h1>
+                <h3 class="back-card-mt">Rank: #${mountain.rank}</h3>
+                <h3 class="back-card-mt">Elevation: ${mountain.elevation}</h3>
+                <p>Standard Route: ${route.name}</p>
+                <p>Trailhead: ${route.trailhead}</p>
+                <p>Difficulty: ${route.difficulty}</p>
+                <p>Gain: ${route.gain} feet</p>
+                <p>Length: ${route.length} miles</p>
             </div>
         `   
-
         ul.append(li)
+        li.addEventListener('click', event => {
+            li.classList.toggle('is-flipped')
+        li.addEventListener('mouseover', event => {
+            
+        })
+        })  
+        })
     })
 }
 
