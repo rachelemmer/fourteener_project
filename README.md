@@ -12,16 +12,16 @@ This application uses: Rails version 6.0.2.1 & Ruby 2.6.1. Fork & Clone down rep
 
 ## Dependencies: 
 
-gem 'rails'
-gem 'sqlite3'
-gem 'puma'
-gem 'bootsnap'
-gem 'rack-cors'
-gem 'byebug'
-gem 'listen'
-gem 'spring'
-gem 'spring-watcher-listen'
-gem 'tzinfo-data'
+* gem 'rails'
+* gem 'sqlite3'
+* gem 'puma'
+* gem 'bootsnap'
+* gem 'rack-cors'
+* gem 'byebug'
+* gem 'listen'
+* gem 'spring'
+* gem 'spring-watcher-listen'
+* gem 'tzinfo-data'
 
 ## About this application: 
 
