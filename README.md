@@ -8,15 +8,15 @@ Installation: This application uses: Rails version 6.0.2.1 & Ruby 2.6.1. Fork & 
 
 Dependencies: 
 
-gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
-gem 'sqlite3', '~> 1.4'
-gem 'puma', '~> 4.1'
-gem 'bootsnap', '>= 1.4.2', require: false
+gem 'rails'
+gem 'sqlite3'
+gem 'puma'
+gem 'bootsnap'
 gem 'rack-cors'
-gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-gem 'listen', '>= 3.0.5', '< 3.2'
+gem 'byebug'
+gem 'listen'
 gem 'spring'
-gem 'spring-watcher-listen', '~> 2.0.0'
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'spring-watcher-listen'
+gem 'tzinfo-data'
 
 About this application: This application was created by Rachel Emmer. Rachel is a student at Flatiron School Software Engineering Bootcamp and an avid hiker. 
