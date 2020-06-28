@@ -27,4 +27,4 @@ This application uses: Rails version 6.0.2.1 & Ruby 2.6.1. Fork & Clone down rep
 
 This application was created by Rachel Emmer. It allows users to search fourteeners by name or by difficulty and read corresponding information about the mountain. Rachel is a student at Flatiron School Software Engineering Bootcamp and an avid hiker. 
 
-#### The backend for this repository can be found here: https://github.com/rachelemmer/fourteeners_backend
+#### The backend for this repository can be found here: https://github.com/rachelemmer/fourteeners-backend
